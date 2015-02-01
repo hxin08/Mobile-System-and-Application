@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/action_create_chatroom"
+        android:icon="@drawable/ic_menu_btn_add"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="Create"/>
+    
+    <item
+        android:id="@+id/action_send_message"
+        android:icon="@drawable/ic_menu_btn_send"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom|withText"
+        android:title="Send"/>
+    
+</menu>

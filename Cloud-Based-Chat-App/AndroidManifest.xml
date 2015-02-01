@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.stevens.cs522.chat.oneway"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WIFI" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="edu.stevens.cs522.chat.cloud.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.cloud.PeerList"
+            android:label="@string/title_activity_peer_list" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.cloud.MessageList"
+            android:label="@string/title_activity_message_list" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.cloud.CloudChatApp"
+            android:label="@string/title_activity_ChatApp" >
+        </activity>
+
+        <provider
+            android:name="provider.ChatProvider"
+            android:authorities="chat"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
+
+        <service
+            android:name="service.ChatReceiverService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="service.IChatSendService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="service.InitService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

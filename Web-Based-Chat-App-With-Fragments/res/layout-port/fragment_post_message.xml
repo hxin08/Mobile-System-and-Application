@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/send_message"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:orientation="vertical"  >
+
+    <TextView
+        android:id="@+id/lbl_send_message" 
+        android:text="Please write your message here." 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" />
+      
+    <EditText
+        android:id="@+id/txt_send_message"
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:imeOptions="actionDone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+    	<Button
+     	   	android:id="@+id/send_msg_btn"
+     	   	android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="OK" />
+        
+        <Button
+   	  		android:id="@+id/cancel_msg_btn"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="CANCEL" />   
+    </LinearLayout>
+    
+</LinearLayout>

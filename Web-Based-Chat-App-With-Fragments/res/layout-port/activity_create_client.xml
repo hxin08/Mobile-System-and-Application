@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_height="wrap_content"
+          	android:layout_width="0dp"
+        	android:layout_weight="0.35"
+            android:text="@string/server_uri"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/server_uri"
+            android:layout_height="wrap_content"
+         	android:layout_width="0dp"
+        	android:layout_weight="0.65"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="@string/server_uri_default" />   
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <TextView
+        	android:layout_height="wrap_content"
+         	android:layout_width="0dp"
+        	android:layout_weight="0.35"
+            android:text="@string/client_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/client_name"
+        	android:layout_height="wrap_content"
+         	android:layout_width="0dp"
+        	android:layout_weight="0.65"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="@string/client_name_default" />  
+    </LinearLayout>
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startClient"
+        android:text="@string/button_start" />
+
+</LinearLayout>

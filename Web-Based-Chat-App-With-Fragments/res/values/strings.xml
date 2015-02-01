@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Web-Based-Chat-App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="server_uri">Server URI:</string>
+    <string name="server_uri_default">http://155.246.142.33:8080</string>
+    <string name="client_name">Client Name:</string>
+    <string name="client_name_default">Client</string>
+    <string name="button_start">START BUTTON</string>
+    <string name="message_edit_text">Please input your message here.</string>
+    <string name="button_send">SEND BUTTON</string>
+    <string name="action_unregister">Unregister</string>
+    <string name="show_client_list">Show ClientsList</string>
+    <string name="title_activity_show_clients">ChatroomDetails</string>
+    <string name="empty_list"></string>
+</resources>
